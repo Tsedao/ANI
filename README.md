@@ -1,5 +1,6 @@
 # Amortized Network Intervention to Steer the Excitatory Point Process
-
+## Prerequisite
+`torch`, `torchdiffeq`
 ## Usage
 ### Dataset preparation
 First store the historical data under `synthetic_data` folder, we need first train a dynamic model for different regions, then moves to policy learning, i.e.,
