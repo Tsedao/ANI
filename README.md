@@ -21,16 +21,16 @@ python train_model.py \
     --learning_influence_matrix  # learning influence matrix if ground truth adjacency matrix is not given in env_params.json
 ```
 The above code will save the dynamic model under `synthetic_data_model` folder
-### Train policy on a single region 
+### Train policy on a single region without represetation learning
 ```py
 python train_rl.py \
     --data_path = YOUR_DATASET_NAME
 ```
-The above code will save the dynamic model under `synthetic_policy_model` folder
+The above code will save the policy model under `synthetic_policy_model` folder
 ### Train meta-policy on multiple regions using constrastive learning loss
 ```py
 python train_meta_rl.py \
     --regions = YOUR_DATASET_NAME_1 YOUR_DATASET_NAME_2 YOUR_DATASET_NAME_3 \
     --model_learning ## adaptive learning dynamic model
 ```
-The above code will save the dynamic model under `synthetic_policy_model` folder
+The above code will save the meta policy model under `synthetic_policy_model` folder
